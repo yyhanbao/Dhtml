@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>img 标签</title>
+  </head>
+  <body>
+    <figure>
+      <figcaption>这是一只可爱的狗狗</figcaption>
+      <img id="yyy" src="../images/沙雕狗.png" alt="沙雕狗" width="400" />
+      <script>
+        yyy.onload = function () {
+          console.log("图片加载成功");
+        };
+        yyy.onerror = function () {
+          console.log("图片加载失败");
+        };
+      </script>
+    </figure>
+  </body>
+</html>

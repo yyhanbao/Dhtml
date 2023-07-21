@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>其他标签</title>
+  </head>
+  <body>
+    <div>
+      <p>1 select 标签</p>
+      <p>示例 1</p>
+      <label for="pet-select">宠物：</label>
+      <select id="pet-select" name="pet-select">
+        <option value="">--请选择一项--</option>
+        <option value="dog">狗</option>
+        <option value="cat">猫</option>
+        <option value="others">其他</option>
+      </select>
+      <p>示例 2</p>
+      <label>
+        宠物：
+        <select name="pets" multiple size="3">
+          <optgroup label="四条腿的宠物">
+            <option value="dog">狗</option>
+            <option value="cat">猫</option>
+          </optgroup>
+          <optgroup label="鸟类">
+            <option value="parrot">鹦鹉</option>
+            <option value="thrush">画眉</option>
+          </optgroup>
+        </select>
+      </label>
+    </div>
+    <hr />
+    <div>
+      <p>2 datalist 标签</p>
+      <label for="ice-cream-choice">冰淇淋：</label>
+      <input
+        type="text"
+        list="ice-cream-flavors"
+        id="ice-cream-choice"
+        name="ice-cream-choice"
+      />
+      <datalist id="ice-cream-flavors">
+        <option value="巧克力"></option>
+        <option value="椰子"></option>
+        <option value="薄荷"></option>
+        <option value="草莓"></option>
+        <option value="香草"></option>
+      </datalist>
+    </div>
+    <hr />
+    <div>
+      <p>3 textarea 标签</p>
+      <textarea id="story" name="story" rows="5" cols="33">
+这是一个很长的故事。</textarea
+      >
+    </div>
+    <hr />
+    <div>
+      <p>4 output 标签</p>
+      <input type="number" name="a" value="10" /> +
+      <input type="number" name="b" value="10" /> =
+      <output name="result">20</output>
+    </div>
+    <hr />
+    <div>
+      <p>5 progress 标签</p>
+      <progress id="file" max="100" value="70">70%</progress>
+    </div>
+    <hr />
+    <div>
+      <p>6 meter 标签</p>
+      <meter
+        id="fuel"
+        name="fuel"
+        min="0"
+        max="100"
+        low="33"
+        high="66"
+        optimum="80"
+        value="70"
+      >
+        at 70/100
+      </meter>
+    </div>
+  </body>
+</html>
